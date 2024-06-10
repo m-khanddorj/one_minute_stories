@@ -35,6 +35,7 @@ def get_indian_standard_time_slots(date):
     time_slots_in_india = [india_tz.localize(slot) for slot in time_slots]
     
     return time_slots_in_india
+
 def convert_to_utc_and_format(time_slots):
     # Define UTC timezone
     utc_tz = pytz.utc
@@ -45,7 +46,7 @@ def convert_to_utc_and_format(time_slots):
     return time_slots_in_utc
 
 if __name__ == "__main__":
-    india_times = get_indian_standard_time_slots(dt.date.today() + dt.timedelta(1))
+    india_times = get_indian_standard_time_slots(dt.date.today() + dt.timedelta(2))
     formatted_time_slots = convert_to_utc_and_format(india_times)
 
     if os.path.exists("youtube.pkl"):

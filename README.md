@@ -22,7 +22,7 @@ Youtube Channel: https://www.youtube.com/channel/UCvKi4wzs2BbEchGfcYKSxxw
 
 ## Used tools
 Python 3.11
-Google Trends API (Forr fetching trending topics)
+Google Trends API (For fetching trending topics)
 News API (For fetching news)
 Bing API (For fetching news)
 Gemini API (for generating funny stories)
@@ -30,6 +30,17 @@ xtts (for text-to-speech)
 WhisperAI (for audio transcription)
 MoviePy (for video creation)
 
-License
+## Get started:
+
+1. Clone this repository
+2. Install requirements
+3. Get Gemini API key , Bing News API key and News API key. All of them have free tiers.
+4. From Youtube data API v3, get OAUTH 2.0 credential and put it under ./resources/youtube_creds.json
+5. Download TTS model weights from https://huggingface.co/coqui/XTTS-v2/tree/main and put it in ./resources/xtts
+6. Prepare 1080x1920 videos ans put them under ./resources/background_videos
+7. Download your favorite voicec actors talking audios to ./resources/voices
+8. Run app.py
+
+## License
 This project is licensed under the CC BY-NC-SA License.
 

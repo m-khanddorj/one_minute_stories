@@ -9,6 +9,9 @@ VIDEO_PATH = os.path.join(OUTPUT_PATH, "videos")
 NEWS_API_KEY = os.environ['NEWS_API_KEY']
 BING_API_KEY = os.environ['BING_API_KEY']
 GEMINI_KEY = os.environ['GEMINI_KEY']
+# Specify the path to the OAuth 2.0 credentials
+CLIENT_SECRETS_FILE = "resources/youtube_creds.json"
+
 
 GEMINI_URL = (
     "https://generativelanguage.googleapis.com/"
